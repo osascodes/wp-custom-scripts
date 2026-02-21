@@ -7,8 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (!header || !hero) return;
 
-    // Slightly reduce trigger height so it switches faster
-    let heroHeight = hero.offsetHeight * 0.85;  // 85% height → no delay
+    let heroHeight = hero.offsetHeight * 0.85;
 
     window.addEventListener("scroll", function () {
         if (window.scrollY > heroHeight) {
